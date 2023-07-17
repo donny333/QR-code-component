@@ -1,0 +1,58 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --blue:#2C7DFA;
+    --blueShade: #3685FF;
+    --darkNavy: #1F314F;
+    --grey:#7D889E;
+    --lightGrey: #D5E1EF;
+    --white:#FFFFFF;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--lightGrey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 28px;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+.qrCodeCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 288px;
+    background-color: var(--white);
+    padding: 16px 16px 32px 16px;
+    border-radius: 20px;
+    > img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    > div {
+        padding: 0;
+        margin: 0;
+        >h1 {
+            text-align: center;
+            color: var(--darkNavy);
+            font-size: 22px;
+            line-height: 28px;
+            font-weight: 700px;
+            margin: 24px 0;
+        }
+        >p {
+            text-align: center;
+            color: var(--grey);
+            font-size: 15px;
+            line-height: 19px;
+            font-weight: 400;
+            padding: 0 16px;
+            margin: 0;
+        }
+    }
+}
